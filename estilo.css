@@ -1,0 +1,264 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1b2a;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header h1 {
+  font-size: 2.5em;
+  color: #f4c430;
+  margin-bottom: 10px;
+}
+
+/* Slogan */
+header p {
+  font-size: 1.2em;
+  color: #b0b8c1;
+  margin-bottom: 30px;
+}
+
+/* Seção do vídeo */
+.tutorial h3 {
+  font-size: 1.8em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+iframe {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  iframe {
+    height: 200px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  .tutorial h3 {
+    font-size: 1.5em;
+  }
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.portfolio {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: #0f2438;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.portfolio h3 {
+  font-size: 2em;
+  color: #f4c430;
+  margin-bottom: 30px;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.portfolio .item {
+  background-color: #132c44;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(244, 196, 48, 0.3);
+}
+
+.portfolio .item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.portfolio .item p {
+  color: #b0b8c1;
+  font-size: 0.95em;
+}
+
+/* Ícone do menu (os três tracinhos) */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  color: white;
+  text-align: left;
+}
+
+/* Sidebar oculta inicialmente */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+/* Conteúdo do sidebar */
+.sidebar h2 {
+  color: white;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.sidebar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.sidebar {
+  width: 0;
+  transition: width 0.3s;
+  overflow-x: hidden;
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* força alinhamento à esquerda */
+}
+
+.menu-title {
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+/* Cards dos criadores */
+.criadores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Cards dos criadores2 */
+.criadores2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Contato */
+.contato p {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.contato a {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.contato a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card2 {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.card2 h3 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.card2 p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #ffffff; /* Continua branco */
+  letter-spacing: 1px; /* Espaçamento entre as letras */
+}
+
+.card2 a img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card2 a img:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
