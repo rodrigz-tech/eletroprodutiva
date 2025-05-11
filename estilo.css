@@ -272,3 +272,8 @@ iframe {
   flex-wrap: wrap;
 }
 
+.small-videos iframe {
+  width: 260px !important;
+  height: 146px !important;
+  flex-shrink: 0;
+}
