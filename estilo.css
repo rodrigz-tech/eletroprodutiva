@@ -263,3 +263,12 @@ iframe {
   margin-bottom: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+.small-videos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
